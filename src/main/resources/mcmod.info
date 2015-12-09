@@ -1,0 +1,16 @@
+[
+{
+  "modid": "enhanceddifficulty",
+  "name": "Enhanced Difficulty",
+  "description": "A mod designed around the idea of adapting monster strength and abilities to the players strength.",
+  "version": "${version}",
+  "mcversion": "1.7.1",
+  "url": "something",
+  "updateUrl": "",
+  "authorList": ["BlueSkyBlackBird"],
+  "credits": "The Forge, FML guys and myself",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
