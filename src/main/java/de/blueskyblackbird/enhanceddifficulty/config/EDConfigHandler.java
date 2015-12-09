@@ -5,7 +5,7 @@ import java.io.File;
 import de.blueskyblackbird.enhanceddifficulty.items.EDItems;
 import net.minecraftforge.common.config.Configuration;
 
-public class ConfigHandler 
+public class EDConfigHandler 
 {
 	
 	public static void init(File file)

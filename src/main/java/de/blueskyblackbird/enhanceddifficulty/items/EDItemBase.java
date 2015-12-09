@@ -3,13 +3,13 @@ package de.blueskyblackbird.enhanceddifficulty.items;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.config.Configuration;
 
-public class BasicEDItem extends Item
+public class EDItemBase extends Item
 {
 	public static final String TEXTURE_PATH = "";
 	
 	protected String registryName;
 	
-	public BasicEDItem() 
+	public EDItemBase() 
 	{
 		super();
 	}
