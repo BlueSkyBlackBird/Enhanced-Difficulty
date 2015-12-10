@@ -41,6 +41,7 @@ public class EDItemBase extends Item
 	}
 	
 	
+	
 //	@Override
 //	@SideOnly(Side.CLIENT)
 //	public void registerIcons(IIconRegister reg) 

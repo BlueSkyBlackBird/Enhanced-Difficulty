@@ -10,4 +10,7 @@ public class EDReference
     //-------------------- Proxy Data-----------------------
     public static final String CLIENT_PROXY = "de.blueskyblackbird.enhanceddifficulty.core.ClientProxy";
     public static final String COMMON_PROXY = "de.blueskyblackbird.enhanceddifficulty.core.CommonProxy";
+    
+    
+    public static final String GUI_FACTORY = "de.blueskyblackbird.enhanceddifficulty.gui.EDGuiFactory";
 }
