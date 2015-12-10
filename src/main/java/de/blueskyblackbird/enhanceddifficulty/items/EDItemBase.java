@@ -1,5 +1,7 @@
 package de.blueskyblackbird.enhanceddifficulty.items;
 
+import de.blueskyblackbird.enhanceddifficulty.moddata.EDTextures;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.config.Configuration;
 
@@ -9,9 +11,13 @@ public class EDItemBase extends Item
 	
 	protected String registryName;
 	
-	public EDItemBase() 
+	public EDItemBase(String unlocalizedName, String registryName, CreativeTabs tab ) 
 	{
 		super();
+		setUnlocalizedName(unlocalizedName);
+		setTextureName(EDTextures.RESOURCE_PREFIX + unlocalizedName);
+		setRegistryName(registryName);
+		setCreativeTab(tab);
 	}
 
 	public String getRegistryName()

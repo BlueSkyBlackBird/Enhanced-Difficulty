@@ -7,25 +7,22 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import de.blueskyblackbird.enhanceddifficulty.config.ConfigHandler;
+import de.blueskyblackbird.enhanceddifficulty.config.EDConfigHandler;
+import de.blueskyblackbird.enhanceddifficulty.moddata.EDReference;
 
-@Mod(modid = EnhancedDifficulty.MODID, version = EnhancedDifficulty.VERSION, name = EnhancedDifficulty.NAME)
+@Mod(modid = EDReference.MODID, version = EDReference.MOD_VERSION, name = EDReference.MOD_NAME)
 public class EnhancedDifficulty
 {
-    public static final String MODID = "enhanceddifficulty";
-    public static final String VERSION = "0.0.1";
-    public static final String NAME = "Enhanced Difficulty";
-    
-    @Instance(value = EnhancedDifficulty.MODID)
+    @Instance(EDReference.MODID)
     public static EnhancedDifficulty instance;
     
-    @SidedProxy(clientSide="de.blueskyblackbird.enhanceddifficulty.core.ClientProxy", serverSide="de.blueskyblackbird.enhanceddifficulty.core.CommonProxy")
+    @SidedProxy(clientSide=EDReference.CLIENT_PROXY,serverSide=EDReference.COMMON_PROXY)
     public static CommonProxy proxy;
     
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-    	ConfigHandler.init(event.getSuggestedConfigurationFile());
+    	EDConfigHandler.init(event.getSuggestedConfigurationFile());
     	
     	proxy.initSounds();
     	proxy.initRenderes();
