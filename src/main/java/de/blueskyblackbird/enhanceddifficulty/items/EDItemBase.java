@@ -1,5 +1,7 @@
 package de.blueskyblackbird.enhanceddifficulty.items;
 
+import de.blueskyblackbird.enhanceddifficulty.core.EDCreativeTab;
+import de.blueskyblackbird.enhanceddifficulty.moddata.EDReference;
 import de.blueskyblackbird.enhanceddifficulty.moddata.EDTextures;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -9,45 +11,22 @@ public class EDItemBase extends Item
 {
 	public static final String TEXTURE_PATH = "";
 	
-	protected String registryName;
 	
-	public EDItemBase(String unlocalizedName, String registryName, CreativeTabs tab ) 
+	public EDItemBase(String unlocalizedName) 
 	{
 		super();
 		setUnlocalizedName(unlocalizedName);
 		setTextureName(EDTextures.RESOURCE_PREFIX + unlocalizedName);
-		setRegistryName(registryName);
-		setCreativeTab(tab);
+		setCreativeTab(EDCreativeTab.ED_TAB);
 	}
 
 	public String getRegistryName()
 	{
-		return registryName;
+		return EDReference.MOD_NAME + "." + getUnlocalizedName();
 	}
 	
-	public void setRegistryName(String registryName)
-	{
-		this.registryName = registryName;
-		
-	}
 	
 	public void initWithConfig(Configuration config)
 	{}
 	
-	
-	protected String getUnwrappedLocalizedName()
-	{
-		return getUnlocalizedName().substring(getUnlocalizedName().indexOf(".")+1);
-	}
-	
-	
-	
-//	@Override
-//	@SideOnly(Side.CLIENT)
-//	public void registerIcons(IIconRegister reg) 
-//	{
-//		itemIcon = reg.registerIcon(getUnwrappedLocalizedName());
-//		System.out.println(getUnwrappedLocalizedName());
-//	}
-
 }

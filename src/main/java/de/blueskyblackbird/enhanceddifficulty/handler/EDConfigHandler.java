@@ -7,6 +7,7 @@ import org.apache.logging.log4j.Level;
 import cpw.mods.fml.client.event.ConfigChangedEvent;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import de.blueskyblackbird.enhanceddifficulty.blocks.EDBlocks;
 import de.blueskyblackbird.enhanceddifficulty.items.EDItems;
 import de.blueskyblackbird.enhanceddifficulty.moddata.EDReference;
 import de.blueskyblackbird.enhanceddifficulty.util.EDLog;
@@ -37,7 +38,8 @@ public class EDConfigHandler
 	
 	private static void loadConfiguration()
 	{
-		EDItems.init(config);
+		EDItems.applyConfig(config);
+		EDBlocks.applyConfig(config);
 		
 		if (config.hasChanged())
 		{

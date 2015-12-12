@@ -1,0 +1,158 @@
+// Collectable heads and others
+// A book to unlock pages for defeated enemies 
+// --> maybe even paintings? or heads? 
+// React to being able to fly 
+// Underwater Enemies
+// DungeonHooks add dungeon spawns 
+// Monsters at daytime -> Weaker versions
+// Monster specific for nether and end
+// apply wounds to monster (visually)
+// different hitboxes? Allowing players to cut off arms? Apply wounds and disable attacks?
+// Unique Death animations (splintering bones?)
+// Damage, Hp, Armour multiplier in the config so you can compensate for other mods
+// Whenever the player dies give him a token (time gate) to reduce the difficulty
+// Rifts to uncover artefacts? One time things? Uncover lost knowledge? 
+// on higher difficulty enchant lower level mobs' armour and weapons
+// worldObj.getClosestPlayerToEntity
+*************************************** Enchantments *******************************************
+************************************************************************************************
+--Rending I -III
+Welp? Armour Piercing? Bleeding? Wounds?
+
+--Nightwalker I
+Buffs at night
+
+--Daywalker I
+Buffs at day 
+
+--Stalwart I-II
+When an attack would drop the HP to 0, the remaining damage will deplete the hungerbar instead (by an adequate amount).
+When there is not enough hunger remaining, the player will die. Level 2 will also react to other damage sources such as lava and drowning (fall damage?).
+
+***************************************** Items ************************************************
+************************************************************************************************
+--Repair Dust 
+A dust item which is craftable and allows to repair a weapon. Should require drops from advanced monsters.
+
+--Ventures of a Forgotten Hero
+A book listing all information about this mod in an immersive fashion (No 4th Wall Jokes!).
+
+--Dragon's Blood
+Potion, when used gives the player temporarily invincibility
+
+--Dragon Scale
+Can be used to enchant a weapon with "Rending"
+
+--Mace (used by a Zombie Knight)
+
+--Crossbow (Used by Crossbow Skeleton)
+
+--Massive Sword (Used by Skeletal Amalgamation)
+
+--Metal Pike (Used by Zombiefied Pikeman)
+
+--Broken Sword of a Corrupted Hero 
+Sword can be upgraded to a complete sword and then purified to restore it to it's former strength. 
+Sword is  of the quality of an Iron Sword with more durability.
+
+--Repaired Sword of a Corrupted Hero
+Has a unique dash attack move (SHIFT + LeftClick) which slightly depletes durability.
+Dash attack is weak but knocks back enemies. Has a large cooldown.
+
+--True Sword of a Hero
+Sword can be repaired normally. The dash attack can be chained. Use only depletes a small amount of hunger. 
+When blocking knockback is negated. 
+
+
+***************************************** Blocks ***********************************************
+************************************************************************************************
+--Rune of Survival 
+A block that tells the player his current difficulty scale.
+
+--Dragon Bone (Decorative)
+A single block that looks like a dragon bone (fence?) but is rather sturdy.
+
+***************************************** Mobs *************************************************
+************************************************************************************************
+============ Tier 1 =============
+==========Iron Equipment=========
+=================================
+--Zombie Knight (N)
+A Zombie that is heavily armoured and wields a mace.
+
+--Ender Spider (N)
+A teleporting spider that teleports and follows up with a spit attack. 
+
+--Crossbow Skeleton (N)
+A Skeleton wielding a crossbow. It tries to stay at range but needs to stop to shoot and reload.
+The damage of the bolts is rather high, but the low reload speed should make up for that. 
+
+--Half Turned Zombie (D)
+A slow half rotten human that will attack and try to bite you. The attacks a weak but can sometimes ignore armour. 
+
+============ Tier 2 =============
+=====Gold-Diamond Equipment======
+=================================
+--Young Ground Dragon (D,N)
+Spitting fire, doing a charge attack and biting are the only attacks of this monster. However each attacks does a lot of damage.
+Fire may ignite the player and also blocks (configurable?).
+
+-- Zombiefied Pikeman (N)
+Long range and a rather defence behaviour turn this guy into a rather nasty fellow. 
+
+============ Tier 3 =============
+========Diamond Equipment========
+=================================
+--Skeletal Amalgamation (N)
+A massive pile of bones formed in a shape of warrior wielding a massive sword.
+Attacks are aimed at players last location before attacking. Deals massive aoe ground damage (like TNT) and destroys blocks.
+Skeleton has lots of HP but does not have much armour. 
+
+--Corrupted Hero (N)
+A player like character with sword and shield. Doing some dashes to hit the player but if missing, he will take some time to recover. 
+When taking alot of damage the Corrupted Hero will use it's shield to mitigate damage and charge up a special ability (360° sword slash that does
+a lot of damage to the player and all surrounding mobs). 
+
+============ Tier 4 =============
+=======Diamond Equipment++=======
+=================================
+--Corrupted Legendary Hero (D)
+A true hero, fallen. "Either you die a hero or live long enough to see yourself become the villain". 
+Devastating sword strikes that have a longer cooldown, but can be chained in a combo. Jumps high and has immense amounts of armour and hp.
+ 
+--Fully Grown Ground Dragon
+A stronger version of the Young Dragon.
+
+--Rampaging Skeleton Trio
+A trio of skeletons that consists of "Huey" "Dewey" and "Louie". Each one has a unique ability.
+
+--Black Widow Spiders
+Larger, more dangerous spiders that can spit a snaring liquid at the player, making him slower for a short period of time. 
+
+
+***************************************** Mini-Bosses ******************************************
+************************************************************************************************
+--Spiderpig
+Half Pig, half spider, a spiderpig!
+
+--Two Headed Dragon
+One head tries to grab you so that the other one can attack continuously. Grab has to be successful and
+can be cancelled by dealing enough damage to the grabbing head. 
+
+--The Author
+You might have wondered what happened to the guy who wrote your handy book, well, no more...
+
+
+***************************************** Mechanics ********************************************
+************************************************************************************************
+--Respawn mitigation
+When a player dies the game should go down the difficulty to allow the player to get his/her gear back
+
+--Broken Equipment mitigation
+When equipment is lost or breaks (is unequipt) the difficulty should go down - or maybe not
+
+****************************************** Quotes **********************************************
+************************************************************************************************
+"Power attracts more power"
+"Whether true glory or unrivalled horror awaited my, I could not foretell"
+"This simple fact fills you with determination"

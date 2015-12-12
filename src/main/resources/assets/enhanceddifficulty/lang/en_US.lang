@@ -1,1 +1,5 @@
 item.edDebugItem.name=Basic Debug Item
+
+tile.edInfoBlock.name=Basic Information Block
+
+itemGroup.enhanceddifficulty=Enhanced Difficulty Tab
