@@ -16,7 +16,7 @@ public class EDGuiConfig extends GuiConfig
 	{
 		super(	parentScreen, 
 				new ConfigElement(EDConfigHandler.config.getCategory(Configuration.CATEGORY_GENERAL)).getChildElements(),
-				EDReference.MODID, 
+				EDReference.MOD_ID, 
 				false, 
 				false, 
 				"Also a test string");

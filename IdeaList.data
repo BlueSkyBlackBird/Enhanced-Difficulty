@@ -13,21 +13,35 @@
 // Whenever the player dies give him a token (time gate) to reduce the difficulty
 // Rifts to uncover artefacts? One time things? Uncover lost knowledge? 
 // on higher difficulty enchant lower level mobs' armour and weapons
-// worldObj.getClosestPlayerToEntity
+// worldObj.getClosestPlayerToEntity 			worldObj.countEnteties
+// cheat/creative item to unlock all pages of the Ventures manuscript
+// How do I adapt difficulty with more than one player present?
+**************************************** Terminology *******************************************
+************************************************************************************************
+--DL (Difficulty Level)
+Describes the difficulty for a given player. The higher the value the stronger the monster. 
+It also means stronger monster will spawn (apart from being stronger specimen themselves).
+
+
+
+
 *************************************** Enchantments *******************************************
 ************************************************************************************************
 --Rending I -III
 Welp? Armour Piercing? Bleeding? Wounds?
 
 --Nightwalker I
-Buffs at night
+Buffs at night (exclusive with Daywalker)
 
 --Daywalker I
-Buffs at day 
+Buffs at day (exclusive with Nightwalker)
 
 --Stalwart I-II
 When an attack would drop the HP to 0, the remaining damage will deplete the hungerbar instead (by an adequate amount).
 When there is not enough hunger remaining, the player will die. Level 2 will also react to other damage sources such as lava and drowning (fall damage?).
+
+--Berserker
+Higher difficulty level will give you more damage but will increase damage taken.
 
 ***************************************** Items ************************************************
 ************************************************************************************************
@@ -36,12 +50,22 @@ A dust item which is craftable and allows to repair a weapon. Should require dro
 
 --Ventures of a Forgotten Hero
 A book listing all information about this mod in an immersive fashion (No 4th Wall Jokes!).
+Unlocks pages if you kill a monster for the first time: Lore, Stats, Image of the mob, weaknesses(?)
+Tells the player about all 
 
 --Dragon's Blood
 Potion, when used gives the player temporarily invincibility
 
 --Dragon Scale
 Can be used to enchant a weapon with "Rending"
+
+--Broken Sword of a Corrupted Hero 
+Sword can be upgraded to a complete sword and then purified to restore it to it's former strength. 
+Sword is  of the quality of an Iron Sword with more durability.
+
+=================================
+=============Weapons============
+=================================
 
 --Mace (used by a Zombie Knight)
 
@@ -51,10 +75,6 @@ Can be used to enchant a weapon with "Rending"
 
 --Metal Pike (Used by Zombiefied Pikeman)
 
---Broken Sword of a Corrupted Hero 
-Sword can be upgraded to a complete sword and then purified to restore it to it's former strength. 
-Sword is  of the quality of an Iron Sword with more durability.
-
 --Repaired Sword of a Corrupted Hero
 Has a unique dash attack move (SHIFT + LeftClick) which slightly depletes durability.
 Dash attack is weak but knocks back enemies. Has a large cooldown.
@@ -63,17 +83,35 @@ Dash attack is weak but knocks back enemies. Has a large cooldown.
 Sword can be repaired normally. The dash attack can be chained. Use only depletes a small amount of hunger. 
 When blocking knockback is negated. 
 
+=================================
+=============Trophies============
+=================================
+--Paintings
+Dragon Slayer, Hydra Hunter, etc. 
+
+--Heads 
+
+
 
 ***************************************** Blocks ***********************************************
 ************************************************************************************************
 --Rune of Survival 
 A block that tells the player his current difficulty scale.
 
+--Pillar of Warding
+A block that stops spawns of a certain level in larger zone. Can be upgraded to block all but the weakest (vanilla) mobs.
+Not ready for decorative use. 
+
 --Dragon Bone (Decorative)
 A single block that looks like a dragon bone (fence?) but is rather sturdy.
 
 ***************************************** Mobs *************************************************
 ************************************************************************************************
+============ Tier 0 =============
+==========Wood Equipment=========
+=================================
+???
+
 ============ Tier 1 =============
 ==========Iron Equipment=========
 =================================
@@ -89,6 +127,9 @@ The damage of the bolts is rather high, but the low reload speed should make up 
 
 --Half Turned Zombie (D)
 A slow half rotten human that will attack and try to bite you. The attacks a weak but can sometimes ignore armour. 
+
+--Electric Eel (Water)
+Tries to get close to the player and use it#s ability: electric charge. Has a long cool down and makes the Eel vulnerable.
 
 ============ Tier 2 =============
 =====Gold-Diamond Equipment======
@@ -113,6 +154,10 @@ A player like character with sword and shield. Doing some dashes to hit the play
 When taking alot of damage the Corrupted Hero will use it's shield to mitigate damage and charge up a special ability (360° sword slash that does
 a lot of damage to the player and all surrounding mobs). 
 
+--Spectre (Nether)
+A smaller version of a ghast that closes distance to the player quickly and will salves of two explosive projectiles in short succession.
+
+
 ============ Tier 4 =============
 =======Diamond Equipment++=======
 =================================
@@ -120,13 +165,13 @@ a lot of damage to the player and all surrounding mobs).
 A true hero, fallen. "Either you die a hero or live long enough to see yourself become the villain". 
 Devastating sword strikes that have a longer cooldown, but can be chained in a combo. Jumps high and has immense amounts of armour and hp.
  
---Fully Grown Ground Dragon
+--Fully Grown Ground Dragon (D,N)
 A stronger version of the Young Dragon.
 
---Rampaging Skeleton Trio
+--Rampaging Skeleton Trio (N)
 A trio of skeletons that consists of "Huey" "Dewey" and "Louie". Each one has a unique ability.
 
---Black Widow Spiders
+--Black Widow Spiders (N)
 Larger, more dangerous spiders that can spit a snaring liquid at the player, making him slower for a short period of time. 
 
 
@@ -142,6 +187,8 @@ can be cancelled by dealing enough damage to the grabbing head.
 --The Author
 You might have wondered what happened to the guy who wrote your handy book, well, no more...
 
+--Hydra
+Multi headed beast that is stationary. Fires explosive at the player. Bites at close range. 
 
 ***************************************** Mechanics ********************************************
 ************************************************************************************************

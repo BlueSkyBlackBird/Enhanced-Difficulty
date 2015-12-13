@@ -30,7 +30,7 @@ public class EDConfigHandler
 	@SubscribeEvent
 	public void onConfigurationChange(ConfigChangedEvent.OnConfigChangedEvent event)
 	{
-		if (event.modID.equalsIgnoreCase(EDReference.MODID))
+		if (event.modID.equalsIgnoreCase(EDReference.MOD_ID))
 		{
 			loadConfiguration();
 		}

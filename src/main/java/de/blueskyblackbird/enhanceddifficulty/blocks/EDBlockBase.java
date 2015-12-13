@@ -2,10 +2,8 @@ package de.blueskyblackbird.enhanceddifficulty.blocks;
 
 import de.blueskyblackbird.enhanceddifficulty.core.EDCreativeTab;
 import de.blueskyblackbird.enhanceddifficulty.moddata.EDReference;
-import de.blueskyblackbird.enhanceddifficulty.moddata.EDTextures;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.common.config.Configuration;
 
@@ -15,7 +13,7 @@ public class EDBlockBase extends Block
 	public EDBlockBase(String unlocalizedName)
 	{
 		super(Material.rock);
-		setBlockTextureName(EDTextures.RESOURCE_PREFIX + unlocalizedName);
+		setBlockTextureName(EDReference.RESOURCE_PREFIX + unlocalizedName);
 		setCreativeTab(EDCreativeTab.ED_TAB);
 		setBlockName(unlocalizedName);
 	}

@@ -8,6 +8,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import de.blueskyblackbird.enhanceddifficulty.Entities.EDEntities;
 import de.blueskyblackbird.enhanceddifficulty.blocks.EDBlocks;
 import de.blueskyblackbird.enhanceddifficulty.handler.EDConfigHandler;
@@ -19,10 +20,10 @@ import de.blueskyblackbird.enhanceddifficulty.util.EDLog;
 import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraftforge.common.MinecraftForge;
 
-@Mod(modid = EDReference.MODID, version = EDReference.MOD_VERSION, name = EDReference.MOD_NAME, guiFactory = EDReference.GUI_FACTORY)
+@Mod(modid = EDReference.MOD_ID, version = EDReference.MOD_VERSION, name = EDReference.MOD_NAME, guiFactory = EDReference.GUI_FACTORY)
 public class EnhancedDifficulty
 {
-    @Instance(EDReference.MODID)
+    @Instance(EDReference.MOD_ID)
     public static EnhancedDifficulty instance;
     
     @SidedProxy(clientSide=EDReference.CLIENT_PROXY,serverSide=EDReference.COMMON_PROXY)
@@ -49,6 +50,12 @@ public class EnhancedDifficulty
     	proxy.initRenderes();
     	
     	EDLog.info("Pre initialization complete");
+    }
+    
+    @EventHandler
+    public void serverStart(FMLServerStartingEvent event)
+    {
+    	//TODO server commands
     }
     
     @EventHandler

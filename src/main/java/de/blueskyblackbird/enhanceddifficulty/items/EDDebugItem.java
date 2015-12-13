@@ -2,16 +2,9 @@ package de.blueskyblackbird.enhanceddifficulty.items;
 
 import java.util.List;
 
-import com.google.common.base.Function;
-
-import cpw.mods.fml.common.network.internal.FMLMessage;
-import cpw.mods.fml.common.registry.EntityRegistry;
-import cpw.mods.fml.common.registry.EntityRegistry.EntityRegistration;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import de.blueskyblackbird.enhanceddifficulty.Entities.EDEntityPig;
 import de.blueskyblackbird.enhanceddifficulty.util.EDHelper;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumAction;
@@ -57,12 +50,7 @@ public class EDDebugItem extends EDItemBase
 	@Override
 	public ItemStack onItemRightClick(ItemStack item, World world, EntityPlayer player)
 	{
-		if (EDHelper.isServer(player)) 
-		{
-			EDEntityPig.canSpawn = !EDEntityPig.canSpawn;
-			System.out.println("Changed Pig spawn rule to: " + EDEntityPig.canSpawn);
-		}
-		return item;
+		return super.onItemRightClick(item, world, player);
 	}
 	
 	

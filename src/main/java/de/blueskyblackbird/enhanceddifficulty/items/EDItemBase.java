@@ -2,8 +2,6 @@ package de.blueskyblackbird.enhanceddifficulty.items;
 
 import de.blueskyblackbird.enhanceddifficulty.core.EDCreativeTab;
 import de.blueskyblackbird.enhanceddifficulty.moddata.EDReference;
-import de.blueskyblackbird.enhanceddifficulty.moddata.EDTextures;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.config.Configuration;
 
@@ -16,7 +14,7 @@ public class EDItemBase extends Item
 	{
 		super();
 		setUnlocalizedName(unlocalizedName);
-		setTextureName(EDTextures.RESOURCE_PREFIX + unlocalizedName);
+		setTextureName(EDReference.RESOURCE_PREFIX + unlocalizedName);
 		setCreativeTab(EDCreativeTab.ED_TAB);
 	}
 

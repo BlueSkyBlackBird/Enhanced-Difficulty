@@ -7,7 +7,7 @@ import de.blueskyblackbird.enhanceddifficulty.moddata.EDReference;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.config.Configuration;
 
-@ObjectHolder(EDReference.MODID)
+@ObjectHolder(EDReference.MOD_ID)
 public class EDItems 
 {
 	public static EDItemBase debugItem = new EDDebugItem("edDebugItem");
